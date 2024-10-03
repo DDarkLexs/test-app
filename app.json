@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "HelloWorld",
-    "slug": "expo-template-default",
+    "name": "test-app",
+    "slug": "test-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -13,13 +13,15 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.lugogo.testapp"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.lugogo.testapp"
     },
     "web": {
       "bundler": "metro",
@@ -31,6 +33,18 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d698c6d5-e219-4d39-a72d-7ca84514b224"
+      }
+    },
+    "owner": "lugogo",
+    "updates": {
+      "url": "https://u.expo.dev/d698c6d5-e219-4d39-a72d-7ca84514b224"
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
     }
   }
 }
